@@ -7,6 +7,10 @@ function makeLoadedDie() {
   return function() {
     id += 1;
     var i = id
+    if(id > 10){ id = 0; id += 1;
+      var i = id;
+
+    }
 
     return list[i - 1];
     /* your code here */
@@ -18,3 +22,23 @@ var rollLoadedDie = makeLoadedDie();
 console.log(rollLoadedDie());  // 5
 console.log(rollLoadedDie());  // 4
 console.log(rollLoadedDie());  // 6
+console.log(rollLoadedDie());  //
+console.log(rollLoadedDie());
+console.log(rollLoadedDie());  //
+console.log(rollLoadedDie());
+console.log(rollLoadedDie());  //
+console.log(rollLoadedDie());
+console.log(rollLoadedDie());  //
+console.log(rollLoadedDie());
+console.log(rollLoadedDie());  //
+console.log(rollLoadedDie());
+console.log(rollLoadedDie());  //
+console.log(rollLoadedDie());
+console.log(rollLoadedDie());  //
+console.log(rollLoadedDie());
+console.log(rollLoadedDie());  //
+console.log(rollLoadedDie());
+console.log(rollLoadedDie());  //
+console.log(rollLoadedDie());
+console.log(rollLoadedDie());  //
+console.log(rollLoadedDie());
