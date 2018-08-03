@@ -3,15 +3,16 @@ var countdownGenerator = function (x) {
   var startNumb = x;
 
   return function (){
-    startNumb -= 1;
-    var a;
-    if (startNumb > 1) {
-      a = startNumb
-    } else if (statNumb === 0){
-      return "Blast off"
-    }else if (statNumb < 0) {
-      return "Rockets already gone, bub!"
+
+
+    if (startNumb >= 1) {
+      console.log(startNumb)
+    } else if (startNumb === 0){
+      console.log("Blast off")
+    } else {
+      console.log("Rockets already gone, bub!")
     }
+    startNumb -= 1;
   }
 };
 
@@ -21,8 +22,7 @@ countdown(); // T-minus 2...
 countdown(); // T-minus 1...
 countdown(); // Blast Off!
 countdown(); // Rockets already gone, bub!
-
-
+countdown(); // Rockets already gone, bub!
 
 
 
